@@ -7,6 +7,6 @@
 <TextView  
     android:layout_width="fill_parent" 
     android:layout_height="wrap_content" 
-    android:text="@string/hello"
-    />
+    android:text="@string/Helloworld" android:textColor="#FFFFFF" android:textStyle="bold" android:onClick="@string/Helloworld"/>
+<QuickContactBadge android:layout_height="wrap_content" android:id="@+id/quickContactBadge1" android:layout_width="wrap_content"></QuickContactBadge>
 </LinearLayout>
