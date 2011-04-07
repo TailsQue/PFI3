@@ -22,19 +22,46 @@ public class main extends Activity implements OnClickListener {
         //tell the button that we want to listen (call onClick when button is invoked)
         button.setOnClickListener(this);
       
-        Context context = getApplicationContext();
-        CharSequence text = "Hello toast!";
-        int duration = Toast.LENGTH_SHORT;
-
-        Toast toast = Toast.makeText(context, text, duration);
-        toast.show();
-  
+   
     }
-    public void onClick(View v) {
+    
+    /*public void onClick(View v) {
 		// perform action on click
 		//Get the text
-		EditText text = (EditText) findViewById(R.id.editText2);
-		Toast t = Toast.makeText(this, R.id.editText2, Toast.LENGTH_LONG);
-		t.show();	
+		EditText text = (EditText) findViewById(R.id.editText1);
+		EditText text2 = (EditText) findViewById(R.id.editText2);
+		
+		String s = text.getText().toString();
+		String b = text2.getText().toString();
+		
+		Toast t = Toast.makeText(this,  b + s, Toast.LENGTH_LONG);
+		t.show();
+		
+		EditText.setText("");
+		EditText2.setText("");
+		*/
+    public void onClick(View view) {
+
+        // which button is clicked?
+
+ 
+
+        // the Toast button
+
+        if (view == findViewById(R.id.button1)) {
+        	EditText editText = (EditText) findViewById(R.id.editText1);
+        	EditText editText2 = (EditText) findViewById(R.id.editText2);
+
+
+        	String message = editText.getText().toString();
+        	String tag = editText2.getText().toString();
+            // display the toast popup window
+             Toast.makeText(this, tag + " - " + message, Toast.LENGTH_SHORT).show();
+             editText.setText("");
+             editText2.setText(""); 
+
+		
     }
+   
+}
 }
