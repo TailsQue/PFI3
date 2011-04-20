@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:baselineAligned="false" android:layout_width="fill_parent" android:layout_height="fill_parent" android:orientation="vertical" android:background="#F7E3B5">
+    <TextView android:id="@+id/textView1" android:layout_width="wrap_content" android:text="Tag:" android:layout_height="wrap_content"></TextView>
+    <EditText android:layout_height="wrap_content" android:layout_width="fill_parent" android:id="@+id/editText2" android:text="Enter your tag" android:textColor="#9A9797" android:typeface="serif" android:maxLength="32"></EditText>
+    <TextView android:id="@+id/textView2" android:layout_width="wrap_content" android:text="Text:" android:layout_height="wrap_content"></TextView>
+    <EditText android:layout_width="fill_parent" android:id="@+id/editText1" android:layout_height="100dip" android:text="Enter your message" android:textColor="#9A9797" android:typeface="serif" android:maxLength="256"></EditText>
+    <Button android:id="@+id/button1" android:layout_width="fill_parent" android:text="Submit" android:typeface="serif" android:background="#E1A61C" android:layout_height="50dip" android:clickable="true" android:onClick="erase"></Button>
+</LinearLayout>
